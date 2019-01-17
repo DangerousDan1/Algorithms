@@ -1,6 +1,15 @@
-# Creation of Linked List 
+# Creation of Linked List
 # We create a Node object and then create another class to use the node project
 class Node:
   def __init__(self, dataval=None):
   self.dataval = dataval
   self.nextval = None
+
+# To create an node we simply pass a value
+node1 = Node("3") # 3
+node2 = Node("7") # 7
+node3 = Node("10") # 10
+# created 3 individual nodes
+# Next step is to connect them together
+node1.nextNode = node2
+node2.nextNode = node3
